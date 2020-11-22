@@ -34,17 +34,17 @@ public class Tabuleiro implements Serializable {
 	public void print() {
 		System.out.println("");
 
-		System.out.printf("     ");
 		
+		String letras[]= {"  A"," B"," C"," D"," E"," F"," G"," H"," I"," J"};
 
 		for (int j=0; j<sizeY; j++)
-			System.out.printf("%d ", j); // imprime índices das colunas
-			//System.out.print(letras[j]);
+			//System.out.printf("%d ", j); // imprime índices das colunas
+			System.out.print(letras[j]);
 		System.out.println("");
 
 		for (int i=0; i<sizeX; i++) {
-			System.out.printf("  %d  ", i); // imprime o numero da linha
-			
+			//System.out.printf("  %d  ", i); // imprime o numero da linha
+			System.out.print(i +" ");
 
 			for (int k=0; k<sizeY; k++)
 				System.out.printf("%c ", tab[i][k]); // imprime linha inteira

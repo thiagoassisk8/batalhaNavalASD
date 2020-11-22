@@ -60,7 +60,7 @@ public class Cliente {
       //System.out.print("Linha: ");
       
       
-      //for (int i=0;i<listaposicoes.length;i++){
+      
         x = (int) (Math.random() * listaposicoes.length);
         
         y = (int) (Math.random() * listaposicoes.length);
@@ -74,7 +74,7 @@ public class Cliente {
       //System.out.print("Coluna: ");
       
       jogador.posicionarBarco(x, y);
-    //}
+    
       System.out.printf("Adicionado! (%d/%d)\n", jogador.getNumBarcos(), jogador.MAX_BARCOS);
     }
     System.out.println("Meu mapa de embarcacoes:");
@@ -162,21 +162,19 @@ public class Cliente {
           //print("Sua vez. Digite as coordenadas (linha e coluna) do tiro.");
           /* recebe os valores X e Y do teclado e em seguida envia para o servidor */
           coord = new int[2];
-          //System.out.print("Linha: ");
+          
           int[] listaposicoes = {0,1, 2, 3,4,5,6,7,8,9};
           
 
-          //for (int i=0;i<listaposicoes.length;i++){
-            coord[0] =(int) (Math.random() * listaposicoes.length);
-            coord[1] = (int) (Math.random() * listaposicoes.length);
-
+          //Linha
+          coord[0] =(int) (Math.random() * listaposicoes.length);
           
-          //coord[0] = in.nextInt(); // coordenada x
+          //Coluna
+          coord[1] = (int) (Math.random() * listaposicoes.length);
 
-          //System.out.print("Coluna: ");
-          //coord[1] = in.nextInt(); // coordenada y
+                    
           ostream.writeObject(coord); // envia as coordenadas
-        //}
+        
 
           // receber log do resultado do tiro
           log = (String)istream.readObject();

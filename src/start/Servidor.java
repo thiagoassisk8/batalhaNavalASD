@@ -167,6 +167,7 @@ public class Servidor {
         if (tirosSobrando() > 0){
           // esperar coordenadas do tiro
           coord = (int[]) istream[i].readObject();
+          String letras[]= {"A","B","C","D","E","F","G","H","I","J"};
 
           // efetuar ataque
           alvo = jogadores[i].atacar(jogadores[def], coord[0], coord[1]);
@@ -176,7 +177,7 @@ public class Servidor {
 
           // enviar log do resultado do tiro para os clientes
           for (int k=0; k<2; k++){
-            ostream[k].writeObject(jogadores[i].getNome() + " atirou nas coordenadas ("+ coord[0] +","+ coord[1] +")\n"+ result);
+            ostream[k].writeObject(jogadores[i].getNome() + " atirou nas coordenadas ("+ letras[coord[0]] +","+ coord[1] +")\n"+ result);
             ostream[k].flush();
           }
 
