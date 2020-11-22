@@ -1,0 +1,6 @@
+src/game/Batalha.java
+src/game/Jogador.java
+src/game/Tabuleiro.java
+src/game/Partida.java
+src/start/Servidor.java
+src/start/Cliente.java
