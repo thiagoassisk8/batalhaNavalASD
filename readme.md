@@ -8,11 +8,11 @@ Jogo batalha naval usando pde Sockets UDP.
 
 ## Como executar
 
-<<<<<<< HEAD
+
 Para executar no Windows, abra seu Prompt de comando (CMD) e entre no diretório raiz aonde o arquivo foi baixado e execute os arquivos em binario que estão armazenados no diretório:
-=======
+
 Para executar no Windows, abra seu Prompt de comando (CMD) e entre no diretório onde o arquivo foi baixado e execute os arquivos em binario que estão armazenados no diretório:
->>>>>>> c2c08cb862e5bb35f52f6e1a8da445a4c6990fd5
+
 
 Para executar no Linux, abra seu terminal e entre no diretório onde o arquivo foi baixado e execute os arquivos em binario que estão armazenados no diretório :
 
@@ -56,13 +56,11 @@ Após a entrada dos jogadores e de seus nomes, o jogo irá iniciar de forma auto
 
 
 
-=======
-
 Para o segundo jogador se conectar, abra um novo Prompt de comando ou terminal e entre na pasta binario_windows ou binarios_linux dependendo do seu sistema. 
 Execute o comando abaixo:
 
 "java start.Cliente"
->>>>>>> c2c08cb862e5bb35f52f6e1a8da445a4c6990fd5
+
 
 E digite seu nome
 
