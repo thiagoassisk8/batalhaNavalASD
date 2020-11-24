@@ -175,7 +175,7 @@ public class Servidor {
           else if (alvo == '~') result = TIRO_NA_AGUA;
           else result = ALVO_JA_ATACADO;
 
-          // enviar log do resultado do tiro para os clientes
+          // enviar log do resultado do tiro para os clientes                                     
           for (int k=0; k<2; k++){
             ostream[k].writeObject(jogadores[i].getNome() + " atirou nas coordenadas ("+ letras[coord[0]] +","+ coord[1] +")\n"+ result);
             ostream[k].flush();
