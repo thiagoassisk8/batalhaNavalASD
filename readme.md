@@ -41,7 +41,7 @@ E digite seu nome
 
 PASSO 3
 Após a abertura do servidor, irá aparecer uma mensagem para o usuário aguardar os demais jogadores. 
-<<<<<<< HEAD
+
 
 Para o segundo jogador se conectar, abra um novo Prompt de comando ou terminal e entre na pasta binario_windows ou binarios_linux dependendo do seu sistema. 
 Execute o comando abaixo:
